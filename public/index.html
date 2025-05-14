@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlashMind - Aprenda mais rápido com IA</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #6366f1, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center px-6 py-20">
+    <div class="text-center max-w-2xl" id="hero">
+      <h1 class="text-5xl font-bold gradient-text mb-6">Aprenda 10x mais rápido com Flashcards criados por IA</h1>
+      <p class="text-lg mb-8">Transforme vídeos e PDFs em flashcards inteligentes para estudar de forma eficaz e personalizada.</p>
+      <a href="#form" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg shadow-lg transition">Quero experimentar</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="bg-white py-20 px-6" id="features">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-12">
+      <div class="text-center" id="f1">
+        <img src="https://img.icons8.com/ios-filled/100/6366f1/brain.png" class="mx-auto mb-4" alt="AI icon">
+        <h3 class="text-xl font-semibold mb-2">IA Personalizada</h3>
+        <p>Flashcards criados com base no conteúdo exato que você consome.</p>
+      </div>
+      <div class="text-center" id="f2">
+        <img src="https://img.icons8.com/ios-filled/100/6366f1/video.png" class="mx-auto mb-4" alt="Video icon">
+        <h3 class="text-xl font-semibold mb-2">De vídeo para flashcard</h3>
+        <p>Transforme vídeos do YouTube ou aulas em cartões de revisão em segundos.</p>
+      </div>
+      <div class="text-center" id="f3">
+        <img src="https://img.icons8.com/ios-filled/100/6366f1/pdf.png" class="mx-auto mb-4" alt="PDF icon">
+        <h3 class="text-xl font-semibold mb-2">PDF inteligente</h3>
+        <p>Carregue apostilas ou resumos em PDF e receba os pontos-chave em flashcards.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-indigo-600 text-white py-20 text-center px-6" id="cta">
+    <div class="max-w-2xl mx-auto" id="cta-box">
+      <h2 class="text-3xl font-bold mb-4">Receba acesso antecipado e experimente de graça</h2>
+      <p class="mb-6">Estamos lançando em breve. Entre para a lista VIP e receba acesso antes de todo mundo.</p>
+      <a href="#form" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-gray-100 transition">Quero acesso antecipado</a>
+    </div>
+  </section>
+
+  <!-- Formulário -->
+  <section class="py-20 px-6 bg-gray-100" id="form">
+    <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <h3 class="text-2xl font-bold mb-4 text-center">Inscreva-se para o acesso antecipado</h3>
+      <form action="https://formspree.io/f/moqgldpn" method="POST">
+        <label class="block mb-2 font-semibold">Nome</label>
+        <input type="text" name="name" required class="w-full p-3 mb-4 border rounded" />
+
+        <label class="block mb-2 font-semibold">Email</label>
+        <input type="email" name="email" required class="w-full p-3 mb-4 border rounded" />
+
+        <button type="submit" class="bg-indigo-600 text-white w-full py-3 rounded hover:bg-indigo-700 transition">Entrar na lista VIP</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>© 2025 FlashMind. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- ScrollReveal Animations -->
+  <script>
+    ScrollReveal().reveal('#hero', { duration: 1000, origin: 'bottom', distance: '50px' });
+    ScrollReveal().reveal('#f1', { delay: 200, origin: 'bottom', distance: '30px' });
+    ScrollReveal().reveal('#f2', { delay: 400, origin: 'bottom', distance: '30px' });
+    ScrollReveal().reveal('#f3', { delay: 600, origin: 'bottom', distance: '30px' });
+    ScrollReveal().reveal('#cta-box', { delay: 100, origin: 'bottom', distance: '40px' });
+  </script>
+</body>
+
+</html>
